@@ -1,222 +1,57 @@
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="سایت شخصی یاسین، آپاراتر و گیمر. لینک کانال‌ها و آخرین ویدیوها را اینجا ببینید.">
-    <title>سایت Yasin10</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Tahoma, Arial, sans-serif;
-            text-align: center;
-            color: #2c3e50;
-            background: linear-gradient(270deg, #74b9ff, #a29bfe, #ffeaa7, #fab1a0);
-            background-size: 800% 800%;
-            animation: gradientMove 15s ease infinite;
-            overflow-x: hidden;
-        }
-        @keyframes gradientMove {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        header {
-            background: rgba(255, 255, 255, 0.15);
-            padding: 30px;
-            backdrop-filter: blur(10px);
-            border-bottom: 2px solid rgba(255,255,255,0.3);
-            position: relative;
-        }
-        h1 {
-            font-size: 28px;
-            animation: textColorChange 2s infinite alternate;
-        }
-        @keyframes textColorChange {
-            0% { color: black; }
-            100% { color: saddlebrown; }
-        }
-        #typed-text {
-            font-size: 18px;
-            color: #f5f5f5;
-            margin-top: 10px;
-            min-height: 24px;
-        }
-        #clock {
-            font-size: 16px;
-            color: #fff;
-            margin-top: 5px;
-        }
-        a {
-            display: inline-block;
-            margin: 10px;
-            padding: 12px 24px;
-            background-color: #0984e3;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        a:hover {
-            background-color: #0652dd;
-            transform: scale(1.05);
-        }
-        .support-btn {
-            background-color: #e84393;
-            animation: pulse 1.5s infinite;
-        }
-        .support-btn:hover {
-            background-color: #d63072;
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(232, 67, 147, 0.7);}
-            70% { transform: scale(1.1); box-shadow: 0 0 20px 10px rgba(232, 67, 147, 0);}
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(232, 67, 147, 0);}
-        }
-        section {
-            margin: 40px auto;
-            max-width: 700px;
-            background: rgba(255,255,255,0.2);
-            padding: 20px;
-            border-radius: 15px;
-            backdrop-filter: blur(8px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s ease-out;
-        }
-        section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        /* افکت برف */
-        .snowflake {
-            position: fixed;
-            top: -10px;
-            z-index: 9999;
-            user-select: none;
-            pointer-events: none;
-            color: white;
-            font-size: 1em;
-            animation-name: fall;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-        }
-        @keyframes fall {
-            0% { transform: translateY(0) rotate(0deg); }
-            100% { transform: translateY(100vh) rotate(360deg); }
-        }
-    </style>
-</head>
-<body>
 
-<header>
-    <h1>سلام! من یاسینم 😄</h1>
-    <p id="typed-text"></p>
-    <div id="clock"></div>
-</header>
-
-<section>
-    <h2>لینک‌های من 📌</h2>
-    <a href="https://rubika.ir/yasin10gng" target="_blank">کانال روبیکا</a>
-    <a href="https://www.aparat.com/yasin10gang" target="_blank">کانال آپارات</a>
-    <a href="https://reymit.ir/yasingng10" target="_blank" class="support-btn">حمایت مالی ♥</a>
-</section>
-
-<section>
-    <h2>اشتراک‌گذاری سایت 📢</h2>
-    <button id="shareBtn" style="padding: 12px 24px; background: #00cec9; color: white; border: none; border-radius: 25px; font-weight: bold; cursor: pointer;">
-        اشتراک‌گذاری سریع
-    </button>
-    <div id="shareLinks" style="display:none; margin-top: 15px;">
-        <a href="https://t.me/share/url?url=https://mysite.com" target="_blank">تلگرام</a>
-        <a href="https://wa.me/?text=https://mysite.com" target="_blank">واتساپ</a>
-        <a href="https://rubika.ir/joingroup/join?link=https://mysite.com" target="_blank">روبیکا</a>
-    </div>
-</section>
-
-<section>
-    <h2>یکی از ویدیو های آپارات</h2>
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-       <iframe src="https://www.aparat.com/video/video/embed/videohash/swnwt8t/vt/frame" 
-        allowfullscreen
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
-       </iframe>
-    </div>
-</section>
-
-<section>
-    <h2>ارتباط با من 📬</h2>
-    <p>برای چت مستقیم با من در روبیکا روی دکمه زیر بزنید:</p>
-    <a href="https://rubika.ir/yasin10gang?msg=سلام%20یاسین!%20میخواستم%20با%20هات%20در%20ارتباط%20باشم." target="_blank">
-        ارسال پیام در روبیکا
-    </a>
-</section>
-
+<!DOCTYPE html><html lang="fa" dir="rtl"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>happytime_sam - Summer</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Tahoma,sans-serif;
+background:linear-gradient(135deg,#87e0ff,#b8f7ff,#fff6a5,#ffd6a5);
+background-size:400% 400%;
+animation:bg 14s ease infinite;
+text-align:center}
+@keyframes bg{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}
+header{
+padding:45px;
+background:linear-gradient(135deg,#00c6ff,#ffd54f,#ff8a65);
+color:#fff;
+text-shadow:0 2px 8px rgba(0,0,0,.2)}
+header h1{font-size:42px}
+section{padding:32px 15px}
+.card{
+max-width:850px;margin:auto;
+background:rgba(255,255,255,.55);
+backdrop-filter:blur(16px);
+border-radius:24px;
+padding:25px;
+box-shadow:0 15px 35px rgba(0,0,0,.15)}
+.slider{position:relative;height:600px;border-radius:22px;overflow:hidden}
+.slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.08);transition:1s}
+.slide.active{opacity:1;transform:scale(1)}
+.social-btn{display:block;max-width:280px;margin:14px auto;padding:15px;border-radius:35px;text-decoration:none;color:#fff;font-weight:bold;transition:.3s}
+.call{background:#00a8e8}.rubika{background:#7b2cbf}.instagram{background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf)}.telegram{background:#25a9e0}
+.social-btn:hover{transform:translateY(-4px) scale(1.03)}
+footer{background:#0096c7;color:#fff;padding:18px}
+.sun{position:fixed;top:25px;left:25px;width:80px;height:80px;border-radius:50%;background:#ffd54f;box-shadow:0 0 40px #ffd54f;z-index:-1}
+@media(max-width:600px){.slider{height:270px}}
+</style></head><body>
+<div class="sun"></div>
+<header><h1>happytime_sam ☀️🎈</h1><p>لحظه‌های شاد با بادکنک</p></header>
+<section><div class="card"><h2>درباره ما</h2><p>happytime_sam با طراحی‌های خاص بادکنکی، جشن‌های شما رو رنگی‌تر و شادتر می‌کنه 🎉</p></div></section>
+<section><div class="card"><h2>نمونه کارها 🎈</h2><div class="slider">
+<img src="balloon1.jpg" class="slide active"><img src="balloon2.jpg" class="slide"><img src="balloon3.jpg" class="slide"><img src="balloon4.jpg" class="slide"><img src="balloon5.jpg" class="slide"><img src="balloon6.jpg" class="slide"><img src="balloon7.jpg" class="slide"><img src="balloon8.jpg" class="slide"><img src="balloon9.jpg" class="slide"><img src="balloon10.jpg" class="slide">
+</div></div></section>
+<section><div class="card"><h2>تماس و روبیکا PV 📞📣</h2>
+<a class="social-btn call" href="tel:09107499132">شماره تلفن ما</a>
+<a class="social-btn rubika" href="https://rubika.ir/sam13671025">روبیکا PV Happy_sam</a>
+</div></section>
+<section><div class="card"><h2>شبکه‌های اجتماعی 🌴</h2>
+<a class="social-btn instagram" href="https://instagram.com/happytime_sam">اینستاگرام</a>
+<a class="social-btn telegram" href="https://t.me/happytime_sam">تلگرام</a>
+<a class="social-btn rubika" href="https://rubika.ir/happytime_sam">روبیکا</a>
+</div></section>
+<footer>©2026 happytime_sam</footer>
 <script>
-    // افکت تایپ
-    const text = "این اولین سایت شخصی من هست. من یک آپاراتر و گیمر هستم 🎮";
-    let index = 0;
-    function typeEffect() {
-        if (index < text.length) {
-            document.getElementById("typed-text").innerHTML += text.charAt(index);
-            index++;
-            setTimeout(typeEffect, 70);
-        }
-    }
-    window.onload = typeEffect;
-
-    // نمایش بخش‌ها هنگام اسکرول
-    const sections = document.querySelectorAll('section');
-    function checkSections() {
-        const triggerBottom = window.innerHeight * 0.85;
-        sections.forEach(section => {
-            const sectionTop = section.getBoundingClientRect().top;
-            if (sectionTop < triggerBottom) {
-                section.classList.add('visible');
-            }
-        });
-    }
-    window.addEventListener('scroll', checkSections);
-    window.addEventListener('load', checkSections);
-
-    // اشتراک‌گذاری
-    document.getElementById("shareBtn").addEventListener("click", function() {
-        if (navigator.share) {
-            navigator.share({
-                title: "سایت Yasin10",
-                text: "سایت yasin10!",
-                url: window.location.href
-            }).catch(err => console.log("Share failed:", err));
-        } else {
-            document.getElementById("shareLinks").style.display = "block";
-        }
-    });
-
-    // ساعت و تاریخ
-    function updateClock() {
-        const now = new Date();
-        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        const date = now.toLocaleDateString('fa-IR', options);
-        const time = now.toLocaleTimeString('fa-IR');
-        document.getElementById('clock').innerHTML = date + " - " + time;
-    }
-    setInterval(updateClock, 1000);
-    updateClock();
-
-    // افکت برف
-    const snowCount = 50;
-    for(let i=0; i<snowCount; i++){
-        const snow = document.createElement('div');
-        snow.className = 'snowflake';
-        snow.style.left = Math.random() * window.innerWidth + 'px';
-        snow.style.fontSize = (Math.random()*10 + 10) + 'px';
-        snow.style.animationDuration = (Math.random()*10 + 10) + 's';
-        snow.style.opacity = Math.random();
-        snow.innerHTML = '❄';
-        document.body.appendChild(snow);
-    }
-</script>
-
-</body>
-</html>
+let s=document.querySelectorAll('.slide'),i=0;
+setInterval(()=>{s[i].classList.remove('active');i=(i+1)%s.length;s[i].classList.add('active');},3000);
+</script></body></html>
